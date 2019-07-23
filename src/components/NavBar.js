@@ -6,9 +6,9 @@ import styled from 'styled-components';
 export default class NavBar extends Component {
     render() {
         return(
-            <NavWrapper className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
+            <NavWrapper className="navbar navbar-expand-sm bg-primary-purple navbar-dark px-sm-5">
                 <Link to="/">
-                    <img src={logo} alt="Logo" className="navbar-brand" style={{width: '50px', height: '50px'}}
+                    <img src={logo} alt="Logo" className="navbar-brand" style={{width: '200px'}}
                     />
                 </Link>
                 <ul className="navbar-nav align-items-center">

@@ -8,14 +8,7 @@ const ProductContext = React.createContext();
 class ProductProvider extends Component {
     state = { 
         products: [],
-        detailProduct: {},
-        cart: [], 
-        modalOpen: false,
-        modalProduct: {},
-        // cart
-        cartSubTotal: 0,
-        cartEnvio: 0,
-        cartTotal: 0
+        detailProduct: {}
     };
 
     componentDidMount() {
@@ -25,7 +18,7 @@ class ProductProvider extends Component {
     setProducts = () => {
         let products = [];
         productosID.forEach(item => {
-            products.push(fetch(`https://safe-lowlands-61178.herokuapp.com/obtiene/producto/${item}`).then(res => res.json()));
+            products.push(fetch(`https://back-catalogo-ripley.herokuapp.com/obtiene/producto/${item}`).then(res => res.json()));
         });
         Promise.all(products)
             .then((productss) => {

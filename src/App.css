@@ -1,6 +1,6 @@
 :root {
-  --mainBlue: #2a2a72;
-  --lightBlue: #009ffb;
+  --mainPurple: #7E42BE;
+  --lightPurple: #7E42BE;
   --mainWhite: #f7f7f7;
   --mainDark: #232323;
   --mainYellow: #fa33b8;
@@ -20,11 +20,11 @@ body {
 }
 
 .text-blue {
-  color: var(--mainBlue);
+  color: var(--mainPurple);
 }
 
 .text-bright {
-  color: var(--lightBlue);
+  color: var(--lightPurple);
 }
 
 /* Cart */
@@ -46,4 +46,8 @@ body {
   cursor: pointer;
   font-size: 1.2rem;
   color: var(--mainYellow);
+}
+
+.bg-primary-purple {
+  background-color: var(--mainPurple) !important;
 }
